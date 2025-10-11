@@ -31,7 +31,7 @@ export function HeroSection() {
               <div className="space-y-4 sm:space-y-6">
                 <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold leading-tight animate-in fade-in slide-in-from-left-8 duration-1000 text-center lg:text-left">
                   <span className="text-[#00a7e1]">FABLE</span>
-                  <span className="text-[#f17720]">TALK</span>
+                  <span className="text-[#f17720]">ENGLISH</span>
                 </h1>
                 <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 font-light animate-in fade-in slide-in-from-left-8 duration-1000 delay-300 text-center lg:text-left">
                 English for Storytelling

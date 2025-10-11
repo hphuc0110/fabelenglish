@@ -1,16 +1,17 @@
 "use client"
 
 import { useState } from "react"
-import { RefreshCw, User, Users, Shield } from "lucide-react"
+import { RefreshCw, User, Users, Shield, Apple } from "lucide-react"
 
 export function MethodologySection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   const steps = [
-    { icon: RefreshCw, label: "Học tập thích ứng", content: "" },
-    { icon: User, label: "Luyện tập 1-1", content: "" },
-    { icon: Users, label: "Framework ứng dụng", content: "" },
-    { icon: Shield, label: "Cẩm nang bán hàng cá nhân hoá", content: "" },
+    { icon: RefreshCw, label: "Flipped Classroom", content: "" },
+    { icon: User, label: "Phản biện 1:1", content: "" },
+    { icon: Users, label: "Cá nhân hóa", content: "" },
+    { icon: Shield, label: "Andragory", content: "" },
+    { icon: Apple, label: "Learning by Doing", content: "" },
   ]
 
   return (

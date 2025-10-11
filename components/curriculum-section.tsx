@@ -6,38 +6,38 @@ export function CurriculumSection() {
   const modules = [
     {
       number: 1,
-      title: "FIRST IMPRESSION & INTRODUCTION",
+      title: "THE BUILDING BLOCKS OF A STORY",
       details: [
-        "Tự tin giới thiệu bản thân và công ty bằng Tiếng Anh trong 60 giây.",
+        "Phân tích được một bài TED Talk mẫu để nhận diện 4 khối kiến trúc cốt lõi.",
       ],
     },
     {
       number: 2,
-      title: "PRODUCT PRESENTATION & FEATURES-BENEFITS ",
+      title: "PAINTING A PICTURE WITH WORDS ",
       details: [
-        "Phân biệt và diễn đạt Features (Tính năng) với Benefits (Lợi ích) bằng Tiếng Anh.",
+        'Chuyển đổi một câu mở đầu đơn giản thành 3 loại "mồi câu" (Hook) có sức ảnh hưởng.',
       ],
     },
     {
       number: 3,
-      title: "THE COMPELLING PITCH & PERSUASIVE STRUCTURE",
+      title: "STORYTELLING FOR CONNECTION",
       details: [
-        "Sử dụng ngôn ngữ để làm nổi bật tác động, sự ảnh hưởng (Impact) của vấn đề đối với khách hàng.",
+        "Áp dụng kỹ thuật Show, Don't Tell (Tả, không Kể) để mô tả xung đột một cách sống động.",
       ],
     },
     {
       number: 4,
-      title: "OBJECTION HANDLING & NEGOTIATION FOUNDATIONS",
+      title: "THE STORY THAT SPEAKS",
       details: [
-        "Nhận biết các phong cách đàm phán (Negotiation Styles) để chuẩn bị chiến lược.",
+        "Phân biệt rõ ràng giữa Tóm tắt (Summary) và Thông điệp cốt lõi (Takeaway).",
       ],
     },
     {
       number: 5,
-      title: "MAKING OFFERS & CLOSING THE FABLE ENGLISH ",
+      title: "YOUR STORY, YOUR STAGE ",
       subtitle: "",
       details: [
-        "Thực hành 3-4 kỹ thuật “chốt sale” bằng lời nói (Verbal Closing) phù hợp với phong cách cá nhân.",
+        "Trình bày câu chuyện hoàn chỉnh một cách tự tin và lôi cuốn, không phụ thuộc vào kịch bản.",
       ],
     },
   ]

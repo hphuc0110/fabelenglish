@@ -3,22 +3,16 @@
 export function TrainingMethodsSection() {
   const methods = [
     {
-      title: "Luyện tập 1:1",
+      title: "Kỹ thuật kể chuyện ứng dụng",
       image: "/images/training/phan-bien.webp",
-      description:
-        "Tối đa hóa thời gian luyện tập sales/pitching bằng tiếng Anh. Hiệu quả về thời gian cho người bận rộn, học tập trung.",
     },
     {
-      title: "Framework ứng dụng",
+      title: "Nâng cao năng lực ngôn ngữ",
       image: "/images/training/nghe-thuat-ke-chuyen.webp",
-      description:
-        "CLEAR, FABE hay PITCH giúp học viên trình bày vấn đề một cách logic, mạch lạc, có tính liên kết (2 chiều) và đảm bảo khối lượng thông tin cần truyền tải tới người nghe trong khoảng thời gian cụ thể.",
     },
     {
-      title: "Cẩm nang bán hàng cá nhân hóa",
+      title: "Kết nối cảm xúc & truyền cảm hứng",
       image: "/images/training/education-2.webp",
-      description:
-        "Nhận 01 bộ cẩm nang bán hàng xây dựng trên chính tình huống của học viên.",
     },
   ]
 
@@ -34,18 +28,20 @@ export function TrainingMethodsSection() {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Tiêu đề */}
         <div className="text-center mb-16">
           <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-8 mx-auto max-w-2xl">
             <h2 className="text-4xl lg:text-4xl font-bold text-white mb-4 drop-shadow-lg">
-              CÁ NHÂN HÓA TUYỆT ĐỐI
+              Triết lý đào tạo
             </h2>
-            <h2 className="text-4xl lg:text-3xl font-bold italic text-white mb-4 drop-shadow-lg">
-              Nội dung được điều chỉnh dựa trên thông tin và thách thức thực tế của học viên
+            <h2 className="text-4xl lg:text-2xl font-bold italic text-white mb-4 drop-shadow-lg">
+              sẵn sàng cho mọi biến lớn
             </h2>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* 3 Card */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {methods.map((method, index) => (
             <div key={index} className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-2xl bg-white/20 backdrop-blur-sm transition-all duration-500 hover:scale-105 hover:shadow-2xl border border-white/10">
@@ -58,7 +54,6 @@ export function TrainingMethodsSection() {
 
                   {/* Overlay mô tả (hiện khi hover) */}
                   <div className="absolute inset-0 bg-black/70 opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex justify-center items-center p-6 text-center">
-                    <p className="text-white/90 text-sm leading-relaxed">{method.description}</p>
                   </div>
 
                   {/* Tiêu đề luôn hiển thị dưới cùng */}
@@ -71,6 +66,13 @@ export function TrainingMethodsSection() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* 🌟 Phần div dưới 3 card */}
+        <div className="text-center mt-8 ">
+          <p className="text-white/80 max-w-2xl mx-auto mb-6">
+          Khóa học giúp nâng cao năng lực ngôn ngữ và rèn kỹ thuật kể chuyện ứng dụng, nhằm tạo kết nối cảm xúc và truyền cảm hứng trong môi trường làm việc và học thuật quốc tế
+          </p>
         </div>
       </div>
     </section>
