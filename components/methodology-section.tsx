@@ -7,16 +7,16 @@ export function MethodologySection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   const steps = [
-    { icon: RefreshCw, label: "Flipped Classroom", content: "" },
-    { icon: User, label: "Phản biện 1:1", content: "" },
-    { icon: Users, label: "Cá nhân hóa", content: "" },
-    { icon: Shield, label: "Andragory", content: "" },
-    { icon: Apple, label: "Learning by Doing", content: "" },
+    { icon: RefreshCw, label: "Flipped Classroom" },
+    { icon: User, label: "Phản biện 1:1"},
+    { icon: Users, label: "Cá nhân hóa"},
+    { icon: Shield, label: "Andragory"},
+    { icon: Apple, label: "Learning by Doing"},
   ]
 
   return (
     <section className="py-16 bg-gradient-to-b from-[#dbe4f9] to-[#b9c7e8]">
-      <div className="container mx-auto px-5 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Tiêu đề */}
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#00a7e1] mb-3">
@@ -28,7 +28,10 @@ export function MethodologySection() {
         </div>
 
         {/* Các bước */}
-        <div className="flex flex-col lg:flex-row items-start justify-center gap-10 lg:gap-16">
+        <div className="
+          flex flex-col items-center gap-10 
+          lg:flex-row lg:justify-center lg:items-start lg:gap-16
+        ">
           {steps.map((step, index) => (
             <div
               key={index}
@@ -37,8 +40,8 @@ export function MethodologySection() {
               onMouseLeave={() => setHoveredIndex(null)}
             >
               {/* Icon */}
-              <div className="flex justify-center items-center w-24 h-24 rounded-full bg-[#00a7e1] shadow-md transition-transform duration-300 hover:scale-110 mb-4">
-                <step.icon className="w-10 h-10 text-white" />
+              <div className="flex justify-center items-center w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#00a7e1] shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl mb-3 sm:mb-4">
+                <step.icon className="w-9 h-9 sm:w-10 sm:h-10 text-white" />
               </div>
 
               {/* Label */}
@@ -46,21 +49,12 @@ export function MethodologySection() {
                 {step.label}
               </span>
 
-              {/* Nội dung luôn hiển thị trên mobile, tooltip hover trên desktop */}
-              <div className="block lg:hidden mt-2 text-sm text-black/70">
-                {step.content}
-              </div>
-              {hoveredIndex === index && (
-                <div className="hidden lg:block absolute top-full mt-5 w-60 bg-white text-black text-sm p-4 rounded-xl shadow-lg z-10 animate-fadeInUp">
-                  {step.content}
-                </div>
-              )}
             </div>
           ))}
         </div>
       </div>
 
-      {/* Animation keyframes */}
+      {/* Animation */}
       <style jsx>{`
         @keyframes fadeInUp {
           0% {

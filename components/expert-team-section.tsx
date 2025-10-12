@@ -38,13 +38,13 @@ const experts = [
 let teachers = [
   {
     id: 1,
-    name: "Nguyễn Quý Đạt",
+    name: "Nguyễn Thị Chung Anh",
     title: "Giáo viên",
-    specialization: "TOEIC & Business English",
-    experience: "6+ năm kinh nghiệm",
+    specialization: "IELTS & Academic English",
+    experience: "8+ năm kinh nghiệm",
     description:
-      "Hơn 6 năm nghiên cứu giảng dạy TOEIC, hơn 4 năm kinh nghiệm giảng dạy tiếng Anh giao tiếp cho người đi làm.",
-    image: "/images/teachers/nguyen-quy-dat.webp",
+      "Giáo viên trẻ tài năng với niềm đam mê truyền cảm hứng học tiếng Anh, chuyên về IELTS và tiếng Anh học thuật.",
+    image: "/images/teachers/chung-anh.webp",
   },
   {
     id: 2,
@@ -66,44 +66,74 @@ let teachers = [
       "Hơn 5 năm giảng dạy IELTS, hơn 2 năm giảng dạy tiếng Anh học thuật cho học sinh Trung học và tiếng Anh chuyên ngành cho người đi làm.",
     image: "/images/teachers/cao-ha-anh.webp",
   },
-  {
+    {
     id: 4,
-    name: "Lê Chung Anh",
+    name: "Nguyễn Quý Đạt",
     title: "Giáo viên",
-    specialization: "IELTS & Academic English",
-    experience: "5+ năm kinh nghiệm",
+    specialization: "TOEIC & Business English",
+    experience: "6+ năm kinh nghiệm",
     description:
-      "Giáo viên trẻ tài năng với niềm đam mê truyền cảm hứng học tiếng Anh, chuyên về IELTS và tiếng Anh học thuật.",
-    image: "/images/teachers/chung-anh.webp",
+      "Hơn 6 năm nghiên cứu giảng dạy TOEIC, hơn 4 năm kinh nghiệm giảng dạy tiếng Anh giao tiếp cho người đi làm.",
+    image: "/images/teachers/quy-dat.jpg",
   },
   {
     id: 5,
-    name: "Phùng Yến Linh",
+    name: "Phan Ngọc Đăng Tâm",
     title: "Giáo viên",
     specialization: "Conversation & Pronunciation",
-    experience: "4+ năm kinh nghiệm",
+    experience: "6+ năm kinh nghiệm",
     description: "Chuyên gia về giao tiếp và phát âm, giúp học viên tự tin trong mọi tình huống giao tiếp tiếng Anh.",
-    image: "/images/teachers/yen-linh.webp",
+    image: "/images/teachers/dang-tam.jpg",
   },
   {
     id: 6,
-    name: "Vũ Thị Khánh Vi",
+    name: "Vũ Trần Bảo Ngọc",
     title: "Giáo viên",
-    specialization: "Business English & Writing",
-    experience: "6+ năm kinh nghiệm",
-    description:
-      "Giáo viên giàu kinh nghiệm trong lĩnh vực tiếng Anh thương mại và kỹ năng viết, từng làm việc tại các công ty quốc tế.",
-    image: "/images/teachers/vi.webp",
+    specialization: "Conversation & Pronunciation",
+    experience: "4+ năm kinh nghiệm",
+    description: "Giáo viên trẻ năng động với khả năng truyền cảm hứng học tập cho mọi lứa tuổi, đặc biệt là trẻ em.",
+    image: "/images/teachers/bao-ngoc.jpg",
   },
   {
     id: 7,
-    name: "Vũ Bình Dương",
+    name: "Phạm Kim Cương",
     title: "Giáo viên",
-    specialization: "General English & Kids English",
-    experience: "3+ năm kinh nghiệm",
-    description: "Giáo viên trẻ năng động với khả năng truyền cảm hứng học tập cho mọi lứa tuổi, đặc biệt là trẻ em.",
-    image: "/images/teachers/binh-duong.webp",
+    specialization: "Conversation & Pronunciation",
+    experience: "8+ năm kinh nghiệm",
+    description: "Giáo viên giàu kinh nghiệm trong lĩnh vực tiếng Anh thương mại và kỹ năng viết, từng làm việc tại các công ty quốc tế.",
+    image: "/images/teachers/kim-cuong.jpg",
   },
+  
+
+  
+  // {
+  //   id: 5,
+  //   name: "Phùng Yến Linh",
+  //   title: "Giáo viên",
+  //   specialization: "Conversation & Pronunciation",
+  //   experience: "4+ năm kinh nghiệm",
+  //   description: "Chuyên gia về giao tiếp và phát âm, giúp học viên tự tin trong mọi tình huống giao tiếp tiếng Anh.",
+  //   image: "/images/teachers/yen-linh.webp",
+  // },
+  // {
+  //   id: 6,
+  //   name: "Vũ Thị Khánh Vi",
+  //   title: "Giáo viên",
+  //   specialization: "Business English & Writing",
+  //   experience: "6+ năm kinh nghiệm",
+  //   description:
+  //     "Giáo viên giàu kinh nghiệm trong lĩnh vực tiếng Anh thương mại và kỹ năng viết, từng làm việc tại các công ty quốc tế.",
+  //   image: "/images/teachers/vi.webp",
+  // },
+  // {
+  //   id: 7,
+  //   name: "Vũ Bình Dương",
+  //   title: "Giáo viên",
+  //   specialization: "General English & Kids English",
+  //   experience: "3+ năm kinh nghiệm",
+  //   description: "Giáo viên trẻ năng động với khả năng truyền cảm hứng học tập cho mọi lứa tuổi, đặc biệt là trẻ em.",
+  //   image: "/images/teachers/binh-duong.webp",
+  // },
 ]
 
 // ✅ Sắp xếp để id 1,2,3 lên đầu
