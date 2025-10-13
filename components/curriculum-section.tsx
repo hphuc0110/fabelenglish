@@ -53,9 +53,9 @@ export function CurriculumSection() {
             Lộ trình 5+1
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            BẠN SẼ NHẬN ĐƯỢC HƠN CẢ MỘT{" "}
+            BẠN SẼ NHẬN ĐƯỢC HƠN CẢ MỘT
           </h2>
-          <h3 className="text-4xl lg:text-5xl font-bold text-[#00a7e1]">
+          <h3 className="text-3xl lg:text-5xl font-bold text-[#00a7e1]">
           KHÓA HỌC TIẾNG ANH THỰC CHIẾN
           </h3>
         </div>

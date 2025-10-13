@@ -80,9 +80,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="text-lg font-semibold leading-relaxed">
-                    1G Trần Quang Diệu, Ô Chợ Dừa, Đống Đa,
-                    <br />
-                    Hà Nội
+                    1G Trần Quang Diệu, Ô Chợ Dừa, Đống Đa, Hà Nội
                   </p>
                 </div>
               </div>

@@ -11,7 +11,7 @@ const experts = [
     specialization: "Business English & Leadership Training",
     experience: "15+ năm kinh nghiệm quốc tế",
     description:
-      "Chuyên gia hàng đầu trong lĩnh vực đào tạo tiếng Anh doanh nghiệp với kinh nghiệm làm việc tại các tập đoàn đa quốc gia.",
+      "Chuyên gia hàng đầu trong lĩnh vực đào tạo tiếng Anh doanh nghiệp với kinh nghiệm làm việc tại tập đoàn đa quốc gia.",
     image: "/images/teachers/james.webp",
   },
   {
