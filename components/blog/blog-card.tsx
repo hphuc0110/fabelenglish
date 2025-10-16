@@ -6,7 +6,6 @@ interface BlogPost {
   id: string
   title: string
   image: string
-  category: string
   readTime: string
 }
 
@@ -26,10 +25,6 @@ export function BlogCard({ post }: BlogCardProps) {
           className="object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute top-4 left-4">
-          <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-600 text-white text-xs font-medium rounded-full">
-            <Tag className="w-3 h-3" />
-            {post.category}
-          </span>
         </div>
       </div>
 

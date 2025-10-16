@@ -20,7 +20,7 @@ const experts = [
     title: "Chuyên gia",
     specialization: "International Communication & Cross-cultural Training",
     experience: "12+ năm kinh nghiệm",
-    description: "Chuyên gia giao tiếp quốc tế với chuyên môn sâu về văn hóa doanh nghiệp và kỹ năng thuyết trình.",
+    description: "Chuyên gia giao tiếp quốc tế với chuyên môn về văn hóa doanh nghiệp và kỹ năng thuyết trình.",
     image: "/images/teachers/sandra.webp",
   },
   {
@@ -44,7 +44,7 @@ let teachers = [
     experience: "8+ năm kinh nghiệm",
     description:
       "Giáo viên trẻ tài năng với niềm đam mê truyền cảm hứng học tiếng Anh, chuyên về IELTS và tiếng Anh học thuật.",
-    image: "/images/teachers/chung-anh.webp",
+    image: "/images/teachers/chung-anh.jpg",
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ let teachers = [
     experience: "7+ năm kinh nghiệm",
     description:
       "Hơn 7 năm kinh nghiệm giảng dạy tiếng Anh đa cấp độ (IELTS, Cambridge). Đào tạo hơn 70 giáo viên tiếng Anh, hơn 500 người đi làm tại các ngành nghề.",
-    image: "/images/teachers/thu-hang.webp",
+    image: "/images/teachers/thu-hang.jpg",
   },
   {
     id: 3,
@@ -64,7 +64,7 @@ let teachers = [
     experience: "5+ năm kinh nghiệm",
     description:
       "Hơn 5 năm giảng dạy IELTS, hơn 2 năm giảng dạy tiếng Anh học thuật cho học sinh Trung học và tiếng Anh chuyên ngành cho người đi làm.",
-    image: "/images/teachers/cao-ha-anh.webp",
+    image: "/images/teachers/ha-anh.jpg",
   },
     {
     id: 4,
@@ -161,11 +161,11 @@ export default function ExpertTeamSection() {
     <section id="instructors" className="py-20 bg-gradient-to-b from-gray-50 to-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#00a7e1] mb-4">Đội ngũ giảng viên </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#00a7e1] mb-4">Đội ngũ Giảng viên </h2>
           <h2 className="text-3xl md:text-4xl font-bold text-[#f17720] mb-4">&</h2>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#00a7e1] mb-4">chuyên gia</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#00a7e1] mb-4">Chuyên gia</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Đội ngũ giảng viên & chuyên gia HLE với nhiều năm kinh nghiệm giảng dạy, kết hợp phương pháp học tập thực
+            Đội ngũ Giảng viên & Chuyên gia HLE với nhiều năm kinh nghiệm giảng dạy, kết hợp phương pháp học tập thực
             dụng và cá nhân hóa 1-1, giúp học viên tháo gỡ những khó khăn của riêng mình và tiến bộ rõ rệt trong quá
             trình học.
           </p>
@@ -176,7 +176,7 @@ export default function ExpertTeamSection() {
           <div className="bg-white rounded-2xl p-6 md:p-12 shadow-2xl">
             <div className="text-center mb-12">
               <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">
-                Đội ngũ <span className="text-[#00a7e1]">chuyên gia</span>
+                Đội ngũ <span className="text-[#00a7e1]">Chuyên gia</span>
               </h3>
             </div>
             <div className="relative">
@@ -207,7 +207,7 @@ export default function ExpertTeamSection() {
               <div className="flex items-center justify-center mt-4 md:hidden">
                 <div className="flex items-center gap-2 bg-green-50 px-4 py-2 rounded-full text-sm text-gray-600">
                   <Swipe className="w-4 h-4" />
-                  <span>Lướt ngang để xem thêm chuyên gia</span>
+                  <span>Lướt ngang để xem thêm Chuyên gia</span>
                 </div>
               </div>
             </div>
@@ -218,7 +218,7 @@ export default function ExpertTeamSection() {
         <div className="bg-white rounded-2xl p-6 md:p-12 shadow-2xl relative">
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">
-              Đội ngũ <span className="text-[#00a7e1]">giáo viên</span>
+              Đội ngũ <span className="text-[#00a7e1]">Giáo viên</span>
             </h3>
           </div>
 
@@ -269,7 +269,7 @@ export default function ExpertTeamSection() {
           <div className="flex items-center justify-center mt-6">
             <div className="flex items-center gap-2 bg-gradient-to-r from-green-50 to-purple-50 px-6 py-3 rounded-full text-sm text-gray-600 shadow-sm">
               <Swipe className="w-4 h-4 text-green-500" />
-              <span className="font-medium">Lướt ngang để khám phá thêm giáo viên</span>
+              <span className="font-medium">Lướt ngang để khám phá thêm Giáo viên</span>
             </div>
           </div>
         </div>

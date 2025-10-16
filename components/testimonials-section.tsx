@@ -10,7 +10,7 @@ export function TestimonialsSection() {
     {
       name: "Nguyễn Hải Đăng",
       title: "CEO - NGUYỄN HẢI ĐĂNG",
-      quote: "FABLE ENGLISH Talk đã giúp tôi biến những ý tưởng không thể thành hiện thực rực rỡ.",
+      quote: "FABLE ENGLISH  đã giúp tôi biến những ý tưởng không thể thành hiện thực rực rỡ.",
       journey: 'TỪ "BẤT KHẢ THI" ĐẾN "THÀNH CÔNG NGOẠN MỤC"',
       image: "/placeholder.svg?height=400&width=600",
     },

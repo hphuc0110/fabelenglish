@@ -55,8 +55,8 @@ function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[#00a7e1] mt-1" />
                 <div>
-                  <p className="font-semibold text-gray-900">Địa chỉ:</p>
-                  <p className="text-gray-700">1G Trần Quang Diệu, Ô Chợ Dừa, Đống Đa, Hà Nội</p>
+                  <p className="font-semibold text-gray-900 text-xs">Địa chỉ:</p>
+                  <p className="text-gray-700 text-xs">1G Trần Quang Diệu, Ô Chợ Dừa, Đống Đa, Hà Nội</p>
                 </div>
               </div>
             </div>
@@ -64,36 +64,12 @@ function Footer() {
             {/* Social Media */}
             <div className="flex gap-4 mt-6">
               <a
-                href="#"
+                href="https://web.facebook.com/share/1AcNCYxpGZ/?mibextid=wwXIfr&_rdc=1&_rdr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#00a7e1] p-3 rounded-full text-white hover:bg-[#b50001] transition-colors"
               >
                 <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#00a7e1] p-3 rounded-full text-white hover:bg-[#b50001] transition-colors"
-              >
-                <MessageCircle className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#00a7e1] p-3 rounded-full text-white hover:bg-[#b50001] transition-colors"
-              >
-                <Youtube className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#00a7e1] p-3 rounded-full text-white hover:bg-[#b50001] transition-colors"
-              >
-                <MessageCircle className="h-5 w-5" />
               </a>
             </div>
           </div>

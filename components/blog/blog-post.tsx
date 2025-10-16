@@ -97,7 +97,7 @@ export function BlogPost({ post }: BlogPostProps) {
                 Muốn học thêm kỹ năng giao tiếp tiếng Anh?
               </h3>
               <p className="text-gray-700 mb-4">
-                Tham gia các khóa học chuyên sâu tại FABLE ENGLISH Talk để nâng cao kỹ năng
+                Tham gia các khóa học chuyên sâu tại FABLE ENGLISH để nâng cao kỹ năng
                 phỏng vấn và giao tiếp tiếng Anh chuyên nghiệp.
               </p>
               <Button className="bg-green-600 hover:bg-green-700 text-white">
