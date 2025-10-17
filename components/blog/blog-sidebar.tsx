@@ -5,22 +5,22 @@ import { TrendingUp, Clock, Users } from "lucide-react"
 const popularPosts = [
     {
       id: "star-method",
-      title: "Thời Đại Của Sự Thuyết Phục: Khi Ngôn Ngữ Trở Thành Lợi Thế Cạnh Tranh",
-      image: "/images/1.jpg",
+      title: "Khi người dạy biết kể – tri thức tự tìm đường lan tỏa",
+      image: "/images/1.png",
       category: "Phỏng vấn",
       readTime: "5 phút đọc",
     },
     {
       id: "experience-storytelling",
-      title: "Tiếng Anh – Cầu Nối Đưa Doanh Nghiệp Việt Ra Thế Giới",
-      image: "/images/2.jpg",
+      title: "Storytelling trong đào tạo – nghệ thuật khiến người học muốn lắng nghe",
+      image: "/images/2.png",
       category: "Kỹ năng giao tiếp",
       readTime: "6 phút đọc",
     },
     {
       id: "tell-me-about-yourself",
-      title: "Vai Trò Chiến Lược Của Tiếng Anh Trong Kinh Doanh Toàn Cầu",
-      image: "/images/3.jpg",
+      title: "Từ dữ liệu đến cảm xúc – bí quyết khiến bài giảng ‘sống’ hơn",
+      image: "/images/3.png",
       category: "Phỏng vấn",
       readTime: "7 phút đọc",
     },
