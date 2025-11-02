@@ -68,9 +68,35 @@ export function CurriculumSection() {
             Lộ trình 5+1 buổi
           </div>
 
+        {/* Steps Section */}
+        <div className="max-w-6xl mx-auto">
+          {/* Step Buttons (Mobile) */}
+          <div className="md:hidden flex justify-between items-center gap-2 pb-4 w-full">
+  {steps.map((step, index) => (
+    <div
+      key={step.number}
+      className="flex flex-col items-center flex-1 w-full mt-8"
+    >
+      <button
+        onClick={() => setActiveStepIndex(index)}
+        className={`relative w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shadow-md transition-all duration-300 ${
+          activeStepIndex === index
+            ? "bg-gradient-to-br from-yellow-400 to-yellow-500 scale-105 shadow-yellow-400/40"
+            : "bg-[#00a7e1] hover:scale-105"
+        }`}
+      >
+        <span className="text-sm sm:text-base font-bold text-white">
+          {activeStepIndex > index ? "✓" : step.number}
+        </span>
+      </button>
+
+    </div>
+  ))}
+</div>
+          {/* Step Buttons (Desktop) */}
           <div className="hidden md:block relative mb-16">
             {/* Thanh nền */}
-            <div className="absolute top-8 left-0 right-0 h-1 bg-[#00a7e1] rounded-full" />
+            <div className="absolute top-8 left-0 right-0 h-1 bg-[#000072] rounded-full" />
             {/* Thanh tiến trình */}
             <div
               className="absolute top-8 left-0 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full transition-all duration-700 ease-out shadow-lg shadow-yellow-400/50"
@@ -81,7 +107,7 @@ export function CurriculumSection() {
             {/* Nút step */}
             <div className="relative flex justify-between items-start">
               {steps.map((step, index) => (
-                <div key={step.number} className="flex flex-col items-center w-1/2">
+                <div key={step.number} className="flex flex-col items-center w-1/4">
                   <button
                     onClick={() => setActiveStepIndex(index)}
                     className={`relative z-10 w-16 h-16 rounded-full flex items-center justify-center shadow-xl transition-all duration-500 transform hover:scale-125 hover:-translate-y-2 ${
@@ -89,7 +115,7 @@ export function CurriculumSection() {
                         ? "bg-gradient-to-br from-yellow-400 to-yellow-500 scale-125 -translate-y-2 shadow-yellow-400/50"
                         : activeStepIndex > index
                         ? "bg-gradient-to-br from-green-400 to-green-500 shadow-green-400/30"
-                        : "bg-[#00a7e1] hover:from-yellow-300 hover:to-yellow-400"
+                        : "bg-[#000072] hover:from-yellow-300 hover:to-yellow-400"
                     }`}
                   >
                     <span className="text-2xl font-bold text-white">
@@ -101,7 +127,8 @@ export function CurriculumSection() {
             </div>
           </div>
 
-          <div className="relative min-h-[200px]">
+          {/* Active Step Detail */}
+          <div className="relative ">
             {steps.map((step, index) => (
               <div
                 key={step.number}
@@ -115,7 +142,7 @@ export function CurriculumSection() {
                   className={`relative p-6 sm:p-10 rounded-3xl bg-gradient-to-br ${step.color} shadow-2xl overflow-hidden transition-shadow duration-500`}
                 >
                   <div className="relative z-10">
-                    <div className="flex items-center gap-3 sm:gap-2 mb-2 sm:mb-6">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
                       <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center shadow-xl">
                         <span className="text-2xl sm:text-3xl font-bold text-white">{step.number}</span>
                       </div>
@@ -123,6 +150,21 @@ export function CurriculumSection() {
                     </div>
                   </div>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+          <div className="relative min-h-[160px]">
+            {steps.map((step, index) => (
+              <div
+                key={step.number}
+                className={`absolute right-1/2 translate-x-1/2 transition-all duration-700 max-w-2xl w-full ${
+                  activeStepIndex === index
+                    ? "opacity-100 scale-100 pointer-events-auto"
+                    : "opacity-0 scale-95 pointer-events-none"
+                }`}
+              >
               </div>
             ))}
           </div>
