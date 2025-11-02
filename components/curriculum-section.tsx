@@ -96,7 +96,7 @@ export function CurriculumSection() {
           {/* Step Buttons (Desktop) */}
           <div className="hidden md:block relative mb-16">
             {/* Thanh nền */}
-            <div className="absolute top-8 left-0 right-0 h-1 bg-[#000072] rounded-full" />
+            <div className="absolute top-8 left-0 right-0 h-1 bg-[#00a7e1] rounded-full" />
             {/* Thanh tiến trình */}
             <div
               className="absolute top-8 left-0 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full transition-all duration-700 ease-out shadow-lg shadow-yellow-400/50"
@@ -115,7 +115,7 @@ export function CurriculumSection() {
                         ? "bg-gradient-to-br from-yellow-400 to-yellow-500 scale-125 -translate-y-2 shadow-yellow-400/50"
                         : activeStepIndex > index
                         ? "bg-gradient-to-br from-green-400 to-green-500 shadow-green-400/30"
-                        : "bg-[#000072] hover:from-yellow-300 hover:to-yellow-400"
+                        : "bg-[#00a7e1] hover:from-yellow-300 hover:to-yellow-400"
                     }`}
                   >
                     <span className="text-2xl font-bold text-white">
@@ -155,7 +155,7 @@ export function CurriculumSection() {
           </div>
         </div>
 
-          <div className="relative min-h-[160px]">
+          <div className="relative min-h-[200px]">
             {steps.map((step, index) => (
               <div
                 key={step.number}
@@ -168,7 +168,7 @@ export function CurriculumSection() {
               </div>
             ))}
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-7">
             BẠN SẼ NHẬN ĐƯỢC HƠN CẢ MỘT
           </h2>
           <h3 className="text-3xl lg:text-5xl font-bold text-[#00a7e1]">
