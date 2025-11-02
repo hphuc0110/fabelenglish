@@ -3,6 +3,9 @@
 import { useState } from "react"
 
 export function CurriculumSection() {
+  const [activeStepIndex, setActiveStepIndex] = useState<number>(0)
+  const [selected, setSelected] = useState<number | null>(null)
+
   const modules = [
     {
       number: 1,
@@ -41,16 +44,87 @@ export function CurriculumSection() {
       ],
     },
   ]
-
-  const [selected, setSelected] = useState<number | null>(null)
+  const steps = [
+    { number: 1, 
+      description: "1 tiếng mỗi ngày.", 
+      color: "bg-[#00a7e1]" 
+    },
+    {
+      number: 5,
+      description: "5 ngày 1 tuần.",
+      color: "bg-[#00a7e1]",
+    },
+  ]
+  const toggleModule = (number: number) => {
+    setSelected(selected === number ? null : number)
+  }
 
   return (
     <section className="py-20 bg-white text-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-block bg-[#00a7e1] text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
-            Lộ trình 5+1
+        <div className="inline-block bg-[#00a7e1] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-2xl sm:text-3xl font-bold shadow-lg ring-4 ring-yellow-500 ring-offset-4 ring-offset-[#00a7e1]">
+            Lộ trình 5+1 buổi
+          </div>
+
+          <div className="hidden md:block relative mb-16">
+            {/* Thanh nền */}
+            <div className="absolute top-8 left-0 right-0 h-1 bg-[#00a7e1] rounded-full" />
+            {/* Thanh tiến trình */}
+            <div
+              className="absolute top-8 left-0 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full transition-all duration-700 ease-out shadow-lg shadow-yellow-400/50"
+              style={{
+                width: `${(activeStepIndex / (steps.length - 1)) * 100}%`,
+              }}
+            />
+            {/* Nút step */}
+            <div className="relative flex justify-between items-start">
+              {steps.map((step, index) => (
+                <div key={step.number} className="flex flex-col items-center w-1/2">
+                  <button
+                    onClick={() => setActiveStepIndex(index)}
+                    className={`relative z-10 w-16 h-16 rounded-full flex items-center justify-center shadow-xl transition-all duration-500 transform hover:scale-125 hover:-translate-y-2 ${
+                      activeStepIndex === index
+                        ? "bg-gradient-to-br from-yellow-400 to-yellow-500 scale-125 -translate-y-2 shadow-yellow-400/50"
+                        : activeStepIndex > index
+                        ? "bg-gradient-to-br from-green-400 to-green-500 shadow-green-400/30"
+                        : "bg-[#00a7e1] hover:from-yellow-300 hover:to-yellow-400"
+                    }`}
+                  >
+                    <span className="text-2xl font-bold text-white">
+                      {activeStepIndex > index ? "✓" : step.number}
+                    </span>
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="relative min-h-[200px]">
+            {steps.map((step, index) => (
+              <div
+                key={step.number}
+                className={`absolute right-1/2 translate-x-1/2 transition-all duration-700 max-w-2xl w-full ${
+                  activeStepIndex === index
+                    ? "opacity-100 scale-100 pointer-events-auto"
+                    : "opacity-0 scale-95 pointer-events-none"
+                }`}
+              >
+                <div
+                  className={`relative p-6 sm:p-10 rounded-3xl bg-gradient-to-br ${step.color} shadow-2xl overflow-hidden transition-shadow duration-500`}
+                >
+                  <div className="relative z-10">
+                    <div className="flex items-center gap-3 sm:gap-2 mb-2 sm:mb-6">
+                      <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center shadow-xl">
+                        <span className="text-2xl sm:text-3xl font-bold text-white">{step.number}</span>
+                      </div>
+                      <h2 className="text-2xl sm:text-3xl font-bold text-white">{step.description}</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             BẠN SẼ NHẬN ĐƯỢC HƠN CẢ MỘT
